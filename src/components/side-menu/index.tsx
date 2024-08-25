@@ -3,6 +3,7 @@ import {css} from '@emotion/react';
 export function SideMenu() {
   return (
     <nav css={styles.container}>
+      <h2 css={styles.titleText}>title</h2>
       <ul css={styles.list}>
         <p>item</p>
       </ul>
@@ -19,10 +20,14 @@ const styles = {
     min-width: 101px;
     z-index: 2;
     font-size: 11px;
+    color: black;
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 60px);
-    z-index: 0;
+    gap: 10px;
+  `,
+  titleText: css`
+    padding: 10px;
   `,
   list: css`
     font-size: 11px;
