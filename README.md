@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Todlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo is a todo app we are implementing for front-end practice.
 
-Currently, two official plugins are available:
+# Usage Tools
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" height="40" style="margin-right: 10px;" />
+  <strong style="font-size: 1.2rem;">React</strong>
+</div>
 
-## Expanding the ESLint configuration
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40" style="margin-right: 10px;" />
+  <strong style="font-size: 1.2rem;">TypeScript</strong>
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<div style="display: flex; align-items: center;">
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" style="margin-right: 10px;" />
+  <strong style="font-size: 1.2rem;">Vite</strong>
+</div>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+  <strong style="font-size: 1.2rem;">Emotion</strong>
+</div>
