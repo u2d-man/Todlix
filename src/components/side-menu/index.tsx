@@ -10,7 +10,7 @@ export function SideMenu() {
 
   return (
     <nav css={styles.container}>
-      <h2 css={styles.titleText}>title</h2>
+      <h2>title</h2>
       <ul css={styles.list}>
         {sideMenuItemList.map((item, index) => (
           <SideMenuItem key={index} icon={item.icon} title={item.title} />
@@ -34,9 +34,6 @@ const styles = {
     min-height: calc(100vh - 60px);
     gap: 10px;
     padding: 20px;
-  `,
-  titleText: css`
-    padding: 10px;
   `,
   list: css`
     font-size: 1.1em;
